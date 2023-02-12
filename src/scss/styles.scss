@@ -1,0 +1,46 @@
+$theme-colors: (
+  "primary": #2b2257,
+  "danger": #ff4136,
+  "background-sec":#bfbfbf
+);
+$font-size-base:1.4rem;
+$hover:#7a71a7;
+.hover:hover{
+  color:$hover;
+}
+.cookie-bg{
+  background:url("../imgs/cookie.jpg") no-repeat;
+  background-size:cover;
+  background-position:50% 50%;
+}
+.maca{
+  background:none;
+  background-image:url('../imgs/cakes-bg.jpg');
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+}
+.scale{
+  transition: .3s transform ease-in-out;
+}
+.scale:hover{
+  transform:scale(1.4);
+  
+}
+.another{
+  background:none;
+  background-image:url('../imgs/cakes-video.jpg');
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+
+}
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";  
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
