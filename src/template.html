@@ -6,54 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <div class="container-fluid text-dark row w-100">
-        <div class="col-2">
-            <div class="container bg-light sticky-top">
-                <div class="card rounded-3 mb-3 "><img src="./imgs/cookie.jpg" alt=""></div>
-                <!-- <ul class="nav nav-tabs flex-column text-center bg-light-subtle">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary hover" aria-current="page" href="#">hello</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-fill text-primary hover" href="#">what we do </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary hover" href="#">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary hover" href="#" tabindex="-1" aria-disabled="true">price list</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary hover" href="#" tabindex="-1" aria-disabled="true">contact</a>
-                    </li>
-
-                </ul> -->
-                <div id="simple-list-example"
-                    class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-                    <a class="p-1 rounded text-primary btn" href="#hello-sec">hello</a>
-                    <a class="p-1 rounded text-primary btn" href="#what-we-do-sec">what we do </a>
-                    <a class="p-1 rounded text-primary btn" href="#about-sec">about</a>
-                    <a class="p-1 rounded text-primary btn" href="#price-sec">price</a>
-                    <a class="p-1 rounded text-primary btn" href="#contacts-sec">contacts</a>
-                </div>
+        <div class="col-lg-2">
+            <div class="container align-content-center text-center bg-light sticky-top d-flex flex-lg-column mb-2" style="flex-wrap:nowrap">
+                <div class=" rounded-3 img-fluid mb-lg-5 mt-lg-3" style=""> <img src="./imgs/cakes-logo.png" alt=""></div>
+                <button class="navbar-toggler d-lg-none align-self-center" style="margin-left:auto;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Menu</button>
+                <nav class="navbar navbar-expand-lg  d-none d-lg-block bg-body-tertiary">
+                    <div class="container-fluid flex-lg-column">
+                    <div class="navbar-brand">Menu</div>
+                     
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav flex-lg-column">
+                          <a class="nav-link" aria-current="page" href="#hello-sec">hello</a>
+                          <a class="nav-link" href="#what-we-do-sec">what we do</a>
+                          <a class="nav-link" href="#about-sec">about</a>
+                          <a class="nav-link" href="#contacts-sec">contacts</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="offcanvas-lg offcanvas-end " tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header text-bg-dark">
+                      <h5 class="offcanvas-title " id="offcanvasResponsiveLabel">Menu</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="offcanvas-body text-bg-dark">
+                        <div class="navbar-nav flex-lg-column">
+                            <a class="nav-link" aria-current="page" href="#hello-sec">hello</a>
+                            <a class="nav-link" href="#what-we-do-sec">what we do</a>
+                            <a class="nav-link" href="#about-sec">about</a>
+                            <a class="nav-link" href="#contacts-sec">contacts</a>
+                          </div>
+                    </div>
+                  </div>
             </div>
         </div>
         <div class="col-lg">
-            <div class="scrollspy-example w-100 mx-auto bg-body-secondary" data-bs-spy="scroll"
-                data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
+            <div class=" w-100 mx-auto bg-body-secondary">
                 <div class="w-100 cookie-bg d-flex justify-content-center align-items-center mb-5" id="hello-sec"
                     style="height:95vh;">
                     <div
-                        class="w-50 h-50 bg-white text-center d-flex align-items-center justify-content-center flex-column row-gap-5">
+                        class=" py-5 bg-white text-center d-flex align-items-center justify-content-center flex-column row-gap-5">
                         <h2>Healthy and tasty cakes</h2>
                         <div>we offer delicious cakes, sandwiches, and drinks</div>
                         <a class="btn btn-primary text-white" href="#what-we-do-sec">More</a>
@@ -119,7 +118,7 @@
                 </div>
 
 
-                <div id="about-sec" class="maca py-lg-5 container" style="height:100vh; margin-left:2rem;">
+                <div id="about-sec" class="maca py-lg-5 container" style="height:100vh;">
                     <div class=" text-start py-5" style="height:60%;">
                         <div class="div mb-4">About becakes</div>
                         <div class="h2 w-25 mb-4">
@@ -160,17 +159,15 @@
                 </div>
 
 
-
-                <h4 id="price-sec">Элемент 4</h4>
-                <p>...</p>
+<!-- 
                 <h4 id="contacts-sec">Элемент 5</h4>
-                <p>...</p>
+                <p>...</p> -->
             </div>
 
         </div>
 
     </div>
-    <!-- <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+     
 </body>
 
 </html>
