@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
 
 <body>
     <div class="container-fluid text-dark row w-100">
         <div class="col-lg-2">
-            <div class="container align-content-center text-center bg-light sticky-top d-flex flex-lg-column mb-2"
+            <div class="container align-content-center my-3 text-center bg-light sticky-top d-flex flex-lg-column mb-2"
                 style="flex-wrap:nowrap">
-                <div class=" rounded-3 img-fluid mb-lg-5 mt-lg-3" style=""> <img src="./imgs/cakes-logo.png" alt="">
+                <div class=" rounded-3 img-fluid mb-lg-5 mt-lg-3 img-sm" style=""> <img class="img-sm"
+                        src="./imgs/cakes-logo.png" alt="">
                 </div>
                 <button class="navbar-toggler d-lg-none align-self-center" style="margin-left:auto;" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
@@ -55,12 +57,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg">
+        <div class="col-lg" data-bs-spy="scroll" data-bs-target="#navbarNavAltMarkup">
             <div class=" w-100 mx-auto bg-body-secondary">
                 <div class="w-100 cookie-bg d-flex justify-content-center align-items-center mb-5" id="hello-sec"
                     style="height:95vh;">
                     <div
-                        class=" p-3 p-lg 5 bg-white text-center d-flex align-items-center justify-content-center flex-column row-gap-5">
+                        class=" p-3 rounded-5 p-lg 5 bg-white text-center d-flex align-items-center justify-content-center flex-column row-gap-5">
                         <h2>Healthy and tasty cakes</h2>
                         <div>we offer delicious cakes, sandwiches, and drinks</div>
                         <a class="btn btn-primary text-white" href="#what-we-do-sec">More</a>
@@ -168,25 +170,53 @@
 
 
                 <div id="contacts-sec" class=" contacts-bg container-lg" style="height:100vh;">
-                    <div class="">
+                    <div class="container px-3">
                         <div class="img-fluid py-lg-5 py-3"><img src="./imgs/cakes-logo-about.png" alt=""></div>
                         <div class=" flex-lg-row justify-content-around  d-flex flex-column mb-5">
                             <div class="flex-row d-flex mb-5">
-                                <div class="map-logo" style="margin-right:0.5rem;"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="map-logo" style="margin-right:0.5rem;"><i
+                                        class="fa-solid fa-location-dot"></i></div>
                                 <div>
-                                    <div class="h5 mb-2">Level 13, 2 Elizabeth St,
+                                    <div class=" mb-2">Level 13, 2 Elizabeth St,
                                         Melbourne, Victoria 3000,
                                         Australia</div>
-                                    <div class="h5 mb-2">Opening everyday: <span class="text-secondary">8am - 4pm</span></div>
+                                    <div class=" mb-2">Opening everyday: <span class="text-secondary">8am - 4pm</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex-column d-flex">
-                                <h5><i class="fa-solid fa-envelope"></i> noreply@envato.com</h5>
-                                <h5><i class="fa-solid fa-phone"></i> +61 (0) 3 8376 6284</h5>
+                                <div><i class="fa-solid fa-envelope"></i> noreply@envato.com</div>
+                                <div><i class="fa-solid fa-phone"></i> +61 (0) 3 8376 6284</div>
                             </div>
                         </div>
                     </div>
-            
+                    <div class="container px-3" style="">
+                        <h4 style="font-weight: 700;">Online contact:</h4>
+                        <hr class="" style="margin: 0 auto 20px auto">
+
+                        
+                            <form class="">
+                                <div class="row row-cols-3">
+                                    <div class=" col"><input class="w-100 form-control" type="text" name="your-name" value="" 
+                                            aria-required="true" aria-invalid="false" placeholder="Your name">
+                                    </div>
+                                    <div class="col"><input class="w-100 form-control" type="email" name="your-email" value="" 
+                                            aria-required="true" aria-invalid="false" placeholder="Your e-mail">
+                                    </div>
+                                    <div class="col"><input class="w-100 form-control type="text" name="your-subject" value=""
+                                            aria-invalid="false" placeholder="Subject"> </div>
+                                </div>
+                                <div class="row row-cols-1 pt-3">
+                                    <div class="col"><textarea class="w-100 form-control" name="your-message" cols="40" rows="7"
+                                            aria-invalid="false" placeholder="Message"></textarea></div>
+                                </div>
+
+                                <div class="col mt-3 mb-3"><input type="submit" class="btn btn-primary" value="Send a message"></div>
+
+                            </form>
+                        
+                    </div>
+
                 </div>
 
 
@@ -199,7 +229,17 @@
 
     </div>
 
-    
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#hello-sec" class="nav-link px-2 text-muted">hello</a></li>
+            <li class="nav-item"><a href="#what-we-do-sec" class="nav-link px-2 text-muted">what we do</a></li>
+            <li class="nav-item"><a href="#about-sec" class="nav-link px-2 text-muted">about</a></li>
+            <li class="nav-item"><a href="#contacts-sec" class="nav-link px-2 text-muted">contacts</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+      </div>
 </body>
 
 </html>

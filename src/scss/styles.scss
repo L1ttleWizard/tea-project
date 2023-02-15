@@ -24,7 +24,7 @@ $hover:#7a71a7;
   transition: .3s transform ease-in-out;
 }
 .scale:hover{
-  transform:scale(1.4);
+  transform:scale(1.3);
   
 }
 .another{
@@ -46,6 +46,13 @@ $hover:#7a71a7;
   background-position:50% 50%;
   background-size: cover;
 }
+@media screen and (max-width: 1230px) {
+  .img-sm{
+    height:50px;
+    width:auto;
+  }
+}
+
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap";  
