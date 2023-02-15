@@ -1,8 +1,23 @@
+            
 $theme-colors: (
   "primary": #2b2257,
   "danger": #ff4136,
-  "background-sec":#bfbfbf
+  "background-sec":#bfbfbf,
+  "secondary":#817e95,
+  "third":#ad8266
 );
+.my-font-sm{
+  font-family: 'Playfair Display', serif;
+  font-size:5rem;
+}
+.my-font{
+  font-family:"Playfair Display", serif;
+  font-weight: 900;
+}
+.my-font-lg{
+  font-family: 'Playfair Display', serif;
+  font-size:5rem;
+}
 $font-size-base:1.4rem;
 $hover:#7a71a7;
 .hover:hover{
@@ -27,19 +42,14 @@ $hover:#7a71a7;
   transform:scale(1.3);
   
 }
-.another{
-  background:none;
-  background-image:url('../imgs/cakes-video.jpg');
-  background-repeat:no-repeat;
-  background-position: 50% 50%;
-  background-size:cover;
 
-}
 .text-bg-dark{
   background-color:black;
   font-weight: bold;
   color:white;
 }
+$font-family-base:"Montserrat",sans-serif;
+$font-weight-base:200;
 .contacts-bg{
   background-image:url('../imgs/cakes-about-bg.jpg');
   background-repeat: no-repeat;
@@ -54,6 +64,7 @@ $hover:#7a71a7;
 }
 
 // Bootstrap and its default variables
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;900&display=swap');  
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap";  
 @import "bootstrap/scss/functions";
