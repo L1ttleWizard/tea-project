@@ -40,6 +40,12 @@ $hover:#7a71a7;
   font-weight: bold;
   color:white;
 }
+.contacts-bg{
+  background-image:url('../imgs/cakes-about-bg.jpg');
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-size: cover;
+}
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap";  
