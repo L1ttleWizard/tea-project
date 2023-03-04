@@ -67,6 +67,12 @@ $font-weight-base:200;
   width:250px;
   height:auto;
 }
+@media screen and (max-width:567px) {
+  .ph{
+    width:150px;
+    height:auto;
+  }
+}
 
 // Bootstrap and its default variables
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;900&display=swap');  
