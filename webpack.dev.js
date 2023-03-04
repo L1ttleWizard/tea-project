@@ -9,10 +9,10 @@ module.exports  =  merge(common,{
   mode: 'development',
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'src')
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
+    static: path.resolve(__dirname, 'src'),
     port: 8080,
     hot: true
   },
